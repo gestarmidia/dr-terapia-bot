@@ -1,8 +1,10 @@
 import TelegramBot from 'node-telegram-bot-api';
 import OpenAI from 'openai';
 
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+// === TOKENS INSERIDOS DIRETAMENTE ===
+const TELEGRAM_BOT_TOKEN = '8192234601:AAHWsCoTczGhvQARr_ww1bx2_8twYyhuqec';
+const OPENAI_API_KEY = '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';
+// ====================================
 
 if (!TELEGRAM_BOT_TOKEN || !OPENAI_API_KEY) {
   console.error('Tokens não configurados!');
