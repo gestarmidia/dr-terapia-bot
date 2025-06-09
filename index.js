@@ -1,10 +1,9 @@
 import TelegramBot from 'node-telegram-bot-api';
 import OpenAI from 'openai';
 
-// === TOKENS INSERIDOS DIRETAMENTE ===
+// ✅ Tokens diretamente no código
 const TELEGRAM_BOT_TOKEN = '8192234601:AAHWsCoTczGhvQARr_ww1bx2_8twYyhuqec';
-const OPENAI_API_KEY = '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';
-// ====================================
+const OPENAI_API_KEY = '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';
 
 if (!TELEGRAM_BOT_TOKEN || !OPENAI_API_KEY) {
   console.error('Tokens não configurados!');
@@ -48,7 +47,7 @@ bot.on('message', async (msg) => {
 
   try {
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-4o',
       messages: [
         {
           role: 'system',
